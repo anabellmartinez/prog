@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int numero, soma = 0;
+
+    printf("Informe um número de até 4 algarismos: ");
+    scanf("%d", &numero);
+
+    // Verifica se o número tem mais de 4 algarismos
+    if (numero < 10000) {
+        while (numero != 0) {
+            soma += numero % 10; // adiciona o último algarismo à soma
+            numero /= 10; // remove o último algarismo do número
+        }
+
+        printf("Soma dos algarismos do número: %d\n", soma);
+    } else {
+        printf("Erro: O número informado possui mais de 4 algarismos.\n");
+    }
+
+    return 0;
+}
+

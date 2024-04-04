@@ -1,0 +1,83 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char resposta[3];
+    
+    printf("É mamífero? (Sim ou Não): ");
+    scanf("%s", resposta);
+    if (strcmp(resposta, "Sim") == 0) {
+        printf("É quadrúpede? (Sim ou Não): ");
+        scanf("%s", resposta);
+        if (strcmp(resposta, "Sim") == 0) {
+            printf("É carnívoro? (Sim ou Não): ");
+            scanf("%s", resposta);
+            if (strcmp(resposta, "Sim") == 0) {
+                printf("O animal escolhido foi o leão.\n");
+            } else {
+                printf("O animal escolhido foi o cavalo.\n");
+            }
+        } else {
+            printf("O animal escolhido foi o homem.\n");
+        }
+    } else {
+        printf("É bípede? (Sim ou Não): ");
+        scanf("%s", resposta);
+        if (strcmp(resposta, "Sim") == 0) {
+            printf("É onívoro? (Sim ou Não): ");
+            scanf("%s", resposta);
+            if (strcmp(resposta, "Sim") == 0) {
+                printf("O animal escolhido foi o homem.\n");
+            } else {
+                printf("O animal escolhido foi o macaco.\n");
+            }
+        } else {
+            printf("É voador? (Sim ou Não): ");
+            scanf("%s", resposta);
+            if (strcmp(resposta, "Sim") == 0) {
+                printf("O animal escolhido foi o morcego.\n");
+            } else {
+                printf("É aquático? (Sim ou Não): ");
+                scanf("%s", resposta);
+                if (strcmp(resposta, "Sim") == 0) {
+                    printf("O animal escolhido foi a baleia.\n");
+                } else {
+                    printf("É ave não-voadora tropical? (Sim ou Não): ");
+                    scanf("%s", resposta);
+                    if (strcmp(resposta, "Sim") == 0) {
+                        printf("O animal escolhido foi o avestruz.\n");
+                    } else {
+                        printf("É polar? (Sim ou Não): ");
+                        scanf("%s", resposta);
+                        if (strcmp(resposta, "Sim") == 0) {
+                            printf("O animal escolhido foi o pingüim.\n");
+                        } else {
+                            printf("É nadador? (Sim ou Não): ");
+                            scanf("%s", resposta);
+                            if (strcmp(resposta, "Sim") == 0) {
+                                printf("O animal escolhido foi o pato.\n");
+                            } else {
+                                printf("É de rapina? (Sim ou Não): ");
+                                scanf("%s", resposta);
+                                if (strcmp(resposta, "Sim") == 0) {
+                                    printf("O animal escolhido foi a águia.\n");
+                                } else {
+                                    printf("É réptil com casco? (Sim ou Não): ");
+                                    scanf("%s", resposta);
+                                    if (strcmp(resposta, "Sim") == 0) {
+                                        printf("O animal escolhido foi a tartaruga.\n");
+                                    } else {
+                                        printf("O animal escolhido foi a cobra.\n");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    return 0;
+}
+

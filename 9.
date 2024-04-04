@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int i = 5;
+    int resultado = i++ + ++i;
+    printf("O resultado é: %d\n", resultado);
+    return 0;
+}
+

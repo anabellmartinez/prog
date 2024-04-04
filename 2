@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+   int main() {
+    int valor_saque, notas_50, notas_10, notas_1;
+
+    printf("Qual o valor do saque? ");
+    scanf("%d", &valor_saque);
+
+    // Calculando o número de notas de R$ 50,00
+    notas_50 = valor_saque / 50;
+    valor_saque %= 50;
+
+    // Calculando o número de notas de R$ 10,00
+    notas_10 = valor_saque / 10;
+    valor_saque %= 10;
+
+    // O restante é a quantidade de notas de R$ 1,00
+    notas_1 = valor_saque;
+
+    printf("Você receberá:\n");
+    printf("%d nota(s) de R$ 50,00\n", notas_50);
+    printf("%d nota(s) de R$ 10,00\n", notas_10);
+    printf("%d nota(s) de R$ 1,00\n", notas_1);
+
+    return 0;
+}
+

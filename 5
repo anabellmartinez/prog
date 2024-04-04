@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double a, b, c;
+
+    printf("Digite o valor de a: ");
+    scanf("%lf", &a);
+
+    printf("Digite o valor de b: ");
+    scanf("%lf", &b);
+
+    printf("Digite o valor de c: ");
+    scanf("%lf", &c);
+
+    // Verifica se a soma de a e b é igual a c
+    if (fabs(a + b - c) < 0.000001) {  // Usando um limite de precisão para comparação de ponto flutuante
+        printf("A soma de a e b é igual a c.\n");
+    } else {
+        printf("A soma de a e b não é igual a c.\n");
+    }
+
+    return 0;
+}
+
